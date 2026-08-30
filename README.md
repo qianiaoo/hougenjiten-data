@@ -16,7 +16,6 @@ CC BY-SA の継承（Share-Alike）条項にしたがって同じ条件で公開
 | `dict/vocab-merged.csv` | 5,023 | 方言語彙。122 の方言記事から抽出（Wikipedia 4,487 ＋ JMdict 536） |
 | `dict/grammar-rules.csv` | 575 | 変換用の文法規則 323 条 ＋ 誤変換防止（protect）252 条 / 12 方言 |
 | `dict/wikipedia-articles.txt` | 263 | 抽出元となった Wikipedia 記事名と記事サイズ |
-| `dict/example-sentences.csv` | 20 | 変換例に使う標準語の文（すべて標準語。方言データではない） |
 | `dict/kawaii.csv` | 39 | 「かわいい方言・面白い方言」の分類と解説文 |
 | `dict/differentiators.json` | 12 地域 | 隣接方言との違いの解説文 |
 | `dict/exclude.csv` | 39 | サイト側で扱わないキーワード（NSFW・単字助詞・他社ブランド語） |
