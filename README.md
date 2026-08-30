@@ -15,7 +15,6 @@ CC BY-SA の継承（Share-Alike）条項にしたがって同じ条件で公開
 | --- | --- | --- |
 | `dict/vocab-merged.csv` | 5,023 | 方言語彙。122 の方言記事から抽出（Wikipedia 4,487 ＋ JMdict 536） |
 | `dict/grammar-rules.csv` | 575 | 変換用の文法規則 323 条 ＋ 誤変換防止（protect）252 条 / 12 方言 |
-| `dict/region-map.csv` | 65 | 地域スラッグ → 方言名・地方区分・親方言・語彙の出典記事 |
 | `dict/wikipedia-articles.txt` | 263 | 抽出元となった Wikipedia 記事名と記事サイズ |
 | `dict/example-sentences.csv` | 20 | 変換例に使う標準語の文（すべて標準語。方言データではない） |
 | `dict/kawaii.csv` | 39 | 「かわいい方言・面白い方言」の分類と解説文 |
@@ -75,7 +74,12 @@ JMdict,近畿,あかん,明かん,,useless; no good; cannot; must,
 ```
 
 `dialect` 列は**抽出元の Wikipedia 記事名**です（方言名そのものとは限りません）。
-地域への対応づけは `region-map.csv` の `vocab_sources` 列を参照してください。
+たとえば `近畿` `近畿方言` `大阪弁 (前田勇)` はいずれも関西の語彙ですが、別々の記事名として
+入っています。抽出元の記事名と記事サイズの一覧は `dict/wikipedia-articles.txt` にあります。
+
+なお、記事名をサイト上の地域ページへ束ねる対応表は本リポジトリには含まれません
+（本サイトの構成そのものであり、CC BY-SA ソースの派生物ではないため）。
+記事名は概ね方言名なので、利用目的に合わせて各自で束ねてください。
 
 Wikipedia の表から機械抽出しているため、`gloss_ja` にウィキ記法（`||`、`align="..."`）が
 残っている行があります。利用する際は各セルを `||` で分割し、日本語の断片を拾ってください。
